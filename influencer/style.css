@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     margin-top: 70px;
 }
+/*------HEADER PART---*/
 .container{
     max-width: 1700px;
     margin: auto;
@@ -43,20 +44,23 @@ body{
     margin: 30px 0;
     border-radius: 30px;
 }
+/*------BODY PART---*/
 .small-container{
     max-width: 1080px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
        
 }
 .col-3{ 
     flex-basis: 26%;
     padding: 10px;
     min-width: 200px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     transition: transform 0.5s; 
+    box-shadow: 2px 2px 2px 1px rgb(201, 206, 211);
 
 }
 .col-3:hover{
@@ -65,6 +69,10 @@ body{
 .col-3 img{
     width: 100%;
     
+}
+.btn1{
+    color: crimson;
+    float: right;
 }
 .title{
         
@@ -95,6 +103,7 @@ line-height: 60px;
     border-radius: 50%;
 
 }
+/*------FOOTER PART---*/
 
 .footer{
     padding: 50px 0 30px;
@@ -102,5 +111,17 @@ line-height: 60px;
     color: whitesmoke;
     text-align: center;
 }
+/*------media query for less than 600 scree sixe---*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+
+    }
+    .col-1, .col-3{
+        flex-basis: 100%;
+    }
+}
+/*------media query for less than 600 scree sixe---*/
+
 
     
